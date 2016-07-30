@@ -1,0 +1,26 @@
+<%= render 'layouts/blog_cover' %>
+<%= render 'layouts/breadcrumb' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <main class="main-content">
+
+        <%= render 'article' %>
+
+      </main><!-- end main-content -->
+
+
+      <ul class="pagination">
+        <li><a href="javascript:void(0);"><i class="icon fa fa-angle-left"></i></a></li>
+        <li><a href="javascript:void(0);">1</a></li>
+        <li><a href="javascript:void(0);">2</a></li>
+        <li><a href="javascript:void(0);">3</a></li>
+        <li><a href="javascript:void(0);"><i class="icon fa fa-angle-right"></i></a></li>
+      </ul>
+    </div><!-- end col -->
+
+
+    <%= render 'right' %>
+  </div><!-- end row -->
+</div><!-- end container -->
