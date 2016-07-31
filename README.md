@@ -36,3 +36,32 @@ Local development branch naming:
 - `enhance/<branch_name>` for minor feature or function enhancement
 - `bugfix/<branch_name>` for bug fixes
 - `maintenance/<branch_name>` for maintenance work
+
+## Deploy
+### Heroku
+
+First Deploy
+
+1. Pull new code from Git
+
+  ```
+  git push heroku v1:,aster
+  ```
+2. Config variable
+
+  ```
+  heroku config:set ADMIN_USERNAME = your_admin_username
+  ```
+
+  ```
+  heroku config:set ADMIN_EMAIL = your_admin_email
+  ```
+
+  ```
+  heroku config:set ADMIN_PASSWORD = your_admin_password
+  ```
+
+  ```
+  heroku config:set SECRET_KEY_BASE = your secret_key_base
+  ```
+
