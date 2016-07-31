@@ -45,7 +45,7 @@ First Deploy
 1. Pull new code from Git
 
   ```
-  git push heroku v1:,aster
+  git push heroku v1:master
   ```
 2. Config variable
 
