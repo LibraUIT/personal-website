@@ -48,5 +48,5 @@ group :development do
 end
 gem 'draper', '~> 1.3'
 gem 'kaminari'
-#gem 'friendly_id'
-#gem 'devise'
+gem 'friendly_id'
+gem 'devise'

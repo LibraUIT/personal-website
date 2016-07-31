@@ -1,0 +1,60 @@
+<div class="wrap-title-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12"><h1 class="ui-title-page">Đăng Ký</h1></div>
+    </div>
+  </div><!-- end container-->
+</div><!-- end wrap-title-page -->
+<div class="section-breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="wrap-breadcrumb clearfix">
+          <ol class="breadcrumb">
+            <li><a href="javascript:void(0);"><i class="icon stroke icon-House"></i></a></li>
+            <li class="active">Đăng Ký</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- end row -->
+  </div><!-- end container -->
+</div><!-- end section-breadcrumb -->
+<main class="main-content">
+  <section class="about rtd">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= devise_error_messages! %>
+
+            <div class="field">
+              <label>Địa chỉ email</label><br />
+              <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+            </div>
+
+            <div class="field">
+              <label>Mật khẩu</label>
+              <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> kí tự tố thiểu)</em>
+              <% end %><br />
+              <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+            </div>
+
+            <div class="field">
+              <label>Nhập lại mật khẩu</label><br />
+              <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
+            </div>
+
+            <div class="actions">
+              <%= f.submit "Đăng Ký", class: 'btn btn-primary' %>
+            </div>
+          <% end %>
+
+          <%= render "devise/shared/links" %>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </section>
+</main>
