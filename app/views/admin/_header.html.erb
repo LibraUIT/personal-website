@@ -15,7 +15,7 @@
             <li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Trang Cá Nhân</a></li>
             <li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Cài Đặt</a></li>
             <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
+              <%= link_to destroy_user_session_path, method: :get do %>
                 <svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Đăng Xuất
               <% end %>
             </li>
